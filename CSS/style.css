@@ -69,7 +69,10 @@ header a.active{
 #menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
-    display: none;
+    display: none !important;
+    cursor: pointer;
+    z-index: 200;
+    margin-left: auto;
 }
 
 /* ================== End header =================== */
@@ -506,7 +509,7 @@ footer {
 }
 @media (max-width:768px){
     #menu-icon {
-        display: block;
+        display: block !important;
     }
     nav {
         position: absolute;
@@ -588,9 +591,3 @@ footer {
         margin-top: 2rem;
     }
 }
-
-
-
-
-
-
