@@ -14,6 +14,9 @@
     --text-color: #fff;
     --main-color: #0ef;
 }
+html, body {
+    overflow-x: hidden;
+}
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -33,12 +36,13 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 2rem 3%;
     background: var(--bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    box-sizing: border-box;
 }
 header.sticky {
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
@@ -72,7 +76,7 @@ header a.active{
     display: none !important;
     cursor: pointer;
     z-index: 200;
-    margin-left: auto;
+    margin-left: 0;
 }
 
 /* ================== End header =================== */
